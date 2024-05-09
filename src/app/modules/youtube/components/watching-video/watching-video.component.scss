@@ -1,0 +1,86 @@
+:host {
+  // Video Components
+  .c-video {
+    row-gap: 1rem;
+    flex-grow: 1;
+
+    &__title {
+    }
+  }
+
+  .c-video-stream {
+    iframe {
+      border-radius: 1rem;
+    }
+  }
+
+  // Acões
+  .c-video-actions {
+    width: 100%;
+
+    &__subscribe-button {
+      color: white;
+      background-color: #CC0000;
+    }
+  }
+
+  .c-video-action {
+    width: fit-content;
+    column-gap: .5rem;
+
+    &__name {
+    }
+
+    // Icons
+    &__icon {
+      
+      // Modifiers 
+      &--like {
+        background-image: url('/assets/images/icons/like.svg');
+      }
+
+      &--deslike {
+        background-image: url('/assets/images/icons/deslike.svg');
+      }
+
+      &--share {
+        background-image: url('/assets/images/icons/share.svg');
+      }
+
+      &--download {
+        background-image: url('/assets/images/icons/download.svg');
+      }
+    }
+
+    &__name {
+      font-weight: bold;
+    }
+  }
+
+  // Informações do canal
+  .c-channel-infos {
+    width: fit-content;
+    column-gap: .8rem;
+
+    &__name {
+      font-size: .9rem;
+    }
+
+    &__subscribers {
+      color: #515151;
+    }
+  }
+  
+  // Descrição
+  .c-video-description {
+    row-gap: .5rem;
+
+    &__date {
+      font-weight: bold;
+    }
+
+    &__paragraph {
+      color: #515151;
+    }
+  }
+}

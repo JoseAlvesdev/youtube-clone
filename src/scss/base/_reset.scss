@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 0.9rem;
+}
+
+a, span {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input {
+  outline: 0;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}

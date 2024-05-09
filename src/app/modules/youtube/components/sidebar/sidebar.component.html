@@ -1,0 +1,55 @@
+<nav class="c-navigatie u-flex-center u-flex-center--column">
+
+  <ul
+    class="
+      c-menu
+      u-flex-center
+      u-flex-center--column
+      u-flex-center--ai-flex-start
+    "
+  >
+    @for (item of arrayVideos(); track item) {
+
+      <li class="c-menu__item">
+
+        <a
+          class="
+            c-menu__link
+            u-flex-center
+            u-flex-center--ai-flex-start
+          "
+          href="#"
+        >
+          <img class="c-thumbnail" [src]="item.src" [alt]="item.alt" />
+
+          <div
+            class="
+              c-data-video
+              u-flex-center
+              u-flex-center--column
+              u-flex-center--ai-flex-start
+            "
+          >
+            <h2 class="c-data-video__title" [innerText]="item.videoTitle">
+            </h2>
+            <h3
+              class="c-data-video__name-channel"
+              [innerText]="item.nameChannel"
+            >
+            </h3>
+            <p 
+              class="c-data-video__views"
+              [innerHTML]="item.views"
+            >
+            </p>
+          </div>
+
+        </a>
+
+      </li>
+
+    }
+    
+  </ul>
+
+</nav>
